@@ -1,6 +1,7 @@
 const cors = require("cors");
 const express = require("express");
 const session = require("express-session");
+require("dotenv").config();
 
 const app = express();
 
@@ -33,5 +34,5 @@ app.use("/works", worksRoutes);
 //start server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log("Server running on port ${PORT}");
+  console.log(`Server running on port ${PORT}`);
 });

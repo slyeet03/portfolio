@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400&family=Jost:wght@300;400&display=swap");
+
+:root {
+  --bg: #0e0e0e;
+  --text: #e8e4e0;
+  --accent: #7a4f5a;
+  --font-display: "Josefin Sans", sans-serif;
+  --font-body: "Jost", sans-serif;
+  --sidebar-width: 160px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-weight: 300;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* ── SIDEBAR NAV ── */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--sidebar-width);
+  height: 100vh;
+  padding: 100px 32px;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-links li a {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  opacity: 1;
+}
+
+.nav-links li a.active {
+  border-bottom: 1px solid var(--text);
+  padding-bottom: 2px;
+}
+
+.nav-links .socials-divider {
+  margin-top: 32px;
+}
+
+#github,
+#linkedin,
+#mail {
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
+  filter: invert(1);
+}
+
+#github:hover,
+#linkedin:hover,
+#mail:hover {
+  opacity: 1;
+}
+
+/* ── FOOTER ── */
+footer {
+  position: fixed;
+  bottom: 24px;
+  left: 32px;
+  font-size: 0.7rem;
+  opacity: 0.3;
+  letter-spacing: 0.05em;
+}

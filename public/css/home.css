@@ -1,0 +1,151 @@
+.main-content {
+  margin-left: var(--sidebar-width);
+  padding: 0 64px;
+}
+
+/* ── HERO ── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  min-height: auto;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-weight: 100;
+  font-size: clamp(5rem, 12vw, 11rem);
+  letter-spacing: 0.05em;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  letter-spacing: 0.2em;
+  opacity: 0.6;
+  margin-top: 24px;
+  text-transform: uppercase;
+}
+
+.hero-contact {
+  font-size: 1rem;
+  opacity: 0.4;
+  letter-spacing: 0.05em;
+  padding-bottom: 48px;
+}
+
+.hero-contact a {
+  opacity: 1;
+  border-bottom: 1px solid rgba(232, 228, 224, 0.3);
+  padding-bottom: 1px;
+  transition: border-color 0.2s ease;
+}
+
+.hero-contact a:hover {
+  border-color: var(--text);
+}
+
+/* ── SECTION SHARED ── */
+.section-heading {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin-bottom: 16px;
+}
+
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(232, 228, 224, 0.15);
+  margin-bottom: 48px;
+}
+
+/* ── ABOUT ME ── */
+.aboutme {
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 0;
+  max-width: 600px;
+  margin-left: auto;
+}
+
+.aboutme-title {
+  font-size: 2rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  opacity: 0.5;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.aboutme p {
+  font-size: 1.2rem;
+  line-height: 1.9;
+  opacity: 0.75;
+  margin-bottom: 20px;
+}
+
+/* ── SKILLS ── */
+.skills {
+  min-height: 60vh;
+  padding: 80px 0;
+}
+
+.skills-title {
+  font-family: var(--font-body);
+  font-size: 2rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  opacity: 0.5;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.skills-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(232, 228, 224, 0.15);
+  margin-bottom: 48px;
+}
+
+.skills-column {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 48px;
+}
+
+.skills-column > div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skills-column > div::before {
+  content: attr(data-label);
+  display: block;
+  font-size: 1.3rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.35;
+  margin-bottom: 12px;
+}
+
+.skills-column span {
+  font-size: 1.2rem;
+  opacity: 0.65;
+  letter-spacing: 0.05em;
+  transition: opacity 0.2s ease;
+}
+
+.skills-column span:hover {
+  opacity: 1;
+}

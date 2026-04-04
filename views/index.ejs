@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
   <%- include('partials/head') %>
-
+<link rel="stylesheet" href="/css/home.css">
   <body>
     <%- include('partials/nav') %>
-
+    <div class="main-content">
     <div class = "hero">
       <h1 class = "hero-title">SHOBHIT DUTTA</h1>
       <h6 class = "hero-subtitle">Student</h6>
-      <span class = "hero-contact">For business inquiries, email me at shobhit7419@mail.com</span>
+      </div>
+      <div class="hero-contact">
+        For business inquiries, email me at 
+  <a href="mailto:shobhit7419@gmail.com">shobhit7419@gmail.com</a>
     </div>
     <div class = "aboutme">
       <h4 class="aboutme-title">ABOUT ME</h4>
@@ -18,7 +21,7 @@
     <div class = "skills">
       <h4 class="skills-title">SKILLS</h4>
       <div class="skills-column">
-        <div class="languages">
+        <div class="languages" data-label="Languages">
           <span>Rust</span>
           <span>Python</span>
           <span>JavaScript</span>
@@ -26,7 +29,7 @@
           <span>Java</span>
           <span>HTML/CSS</span>
         </div>
-        <div class="ML/AI">
+        <div class="ML/AI" data-label="ml/ai">
           <span>TensorFlow</span>
           <span>OpenCV</span>
           <span>Ultralytics YOLOv8</span>
@@ -34,25 +37,26 @@
           <span>NumPy</span>
           <span>Pandas</span>
         </div>
-        <div class="WEB">
+        <div class="WEB" data-label="web">
           <span>Express.js</span>
           <span>Node.js</span>
           <span>EJS</span>
         </div>
-        <div class="TOOLS">
+        <div class="TOOLS" data-label="tools">
                     <span>Git</span>
                     <span>GitHub</span>
           <span>Firebase</span>
           <span>Kaggle</span>
           <span>Railway</span>
         </div>
-                <div class="EMBEDDED">
+                <div class="EMBEDDED" data-label="embedded">
                     <span>ESP32</span>
                     <span>GitHub</span>
         </div>
       </div>
     </div>
-
+    </div>
+    <%- include('partials/footer') %>
   </body>
 </html>
 
