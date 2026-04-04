@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <%- include('partials/head') %>
+  <link rel="stylesheet" href="/css/works.css">
+  <body>
+    <%- include('partials/nav') %>
+    <div class="works-main">
+      <div class="work-title">
+        <h1 class="title">WORKS</h1>
+      </div>
+      <div class="projects-grid">
+        <% projects.forEach(function(project) { %>
+        <div class="card" data-id="<%= project.id %>">
+          <div class="card-thumbnail"
+            style="background-image: url('<%= project.thumbnail %>')">
+          </div>
+          <div class="card-info">
+            <h3 class="card-title"><%= project.title %></h3>
+            <span class="domain-tag"><%= project.domain %></span>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+      <div class="modal-overlay">
+        <div class="modal-content">
+          <button class="modal-close">✕</button>
+          <div class="modal-left">
+            <img class="modal-main-img" />
+            <div class="modal-carousel-controls">
+              <button class="carousel-prev">&#8592;</button>
+              <div class="carousel-dots"></div>
+              <button class="carousel-next">&#8594;</button>
+            </div>
+          </div>
+          <div class="modal-right">
+            <span class="modal-domain"></span>
+            <h2 class="modal-title"></h2>
+            <p class="modal-description"></p>
+            <div class="modal-tech"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include('partials/footer') %>
+    <script>
+  const PROJECTS = <%- JSON.stringify(projects) %>;
+</script>
+    <script src="/js/works.js"></script>
+  </body>
+</html>
