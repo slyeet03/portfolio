@@ -202,7 +202,8 @@ const projects = [
       "RecycleUs is a web application developed for the 'Hack to the Future Hackathon'. It aims to promote and simplify recycling habits by providing users with recycling guides, a recycling center locator, and personal recycling tracking features. Basically gamefying the process of recycling.",
     techStack: ["HTML/CSS", "Javascript", "Python(Flask)", "Firebase"],
     images: [
-      `https://res.cloudinary.com/dolgll6n7/image/upload/q_auto/f_auto/v1775407755/thumb_rqnxkq.png``https://res.cloudinary.com/dolgll6n7/image/upload/q_auto/f_auto/v1775407753/3_wxunuq.png`,
+      `https://res.cloudinary.com/dolgll6n7/image/upload/q_auto/f_auto/v1775407755/thumb_rqnxkq.png`,
+      `https://res.cloudinary.com/dolgll6n7/image/upload/q_auto/f_auto/v1775407753/3_wxunuq.png`,
       `https://res.cloudinary.com/dolgll6n7/image/upload/q_auto/f_auto/v1775407752/4_p9qyjg.png`,
       `https://res.cloudinary.com/dolgll6n7/image/upload/q_auto/f_auto/v1775407752/2_x8tatw.png`,
       `https://res.cloudinary.com/dolgll6n7/image/upload/q_auto/f_auto/v1775407752/5_l3o1hn.png`,
