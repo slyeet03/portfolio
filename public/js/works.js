@@ -21,6 +21,9 @@ function openModal(project) {
   modalDomain.textContent = project.domain;
   modalDescription.textContent = project.description;
 
+  const githubLink = document.querySelector(".modal-github");
+  githubLink.href = project.link;
+
   // tech pills
   modalTech.innerHTML = "";
   project.techStack.forEach((tech) => {

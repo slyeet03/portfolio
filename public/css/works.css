@@ -230,6 +230,31 @@
   margin-top: 8px;
 }
 
+.modal-github {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.4;
+  transition: opacity 0.2s ease;
+  width: fit-content;
+}
+
+.modal-github:hover {
+  opacity: 1;
+}
+
+.modal-github img {
+  width: 18px;
+  height: 18px;
+  filter: invert(1);
+}
+
+.modal-github span {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
 .tech-pill {
   font-size: 1rem;
   letter-spacing: 0.1em;

@@ -18,7 +18,7 @@ const projects = [
   {
     id: 1,
     title: "Driver Behaviour Analysis",
-    domain: "ML/ Computer Vision",
+    domain: "ML/Computer Vision",
     thumbnail: `${projectPath}driver_behaviour_analysis/tumb.jpeg`,
     description:
       "A real-time driver behaviour monitoring system that uses computer vision to detect, track, and score vehicles from a traffic camera feed. It analyses how vehicles move and flags dangerous driving patterns like speeding, aggressive acceleration, and erratic movement.",
@@ -75,6 +75,151 @@ const projects = [
       `${projectPath}space-invaders-in-C/3.png`,
     ],
     link: "https://github.com/slyeet03/space-invaders-in-C/tree/main",
+  },
+  {
+    id: 5,
+    title: "Face2Emote",
+    domain: "ML/Computer Vision",
+    thumbnail: `${projectPath}`,
+    description:
+      "Face2Emote is a real-time emotion and gesture recognition system that detects your facial expressions and hand gestures using a webcam, then displays the corresponding emoji and plays matching sound effects",
+    techStack: ["Python", "Tensorflow", "OpenCV", "Mediapipe"],
+    images: [
+      `${projectPath}`,
+      `${projectPath}`,
+      `${projectPath}`,
+      `${projectPath}`,
+    ],
+    link: "https://github.com/slyeet03/face2emote",
+  },
+  {
+    id: 6,
+    title: "Smart Spray",
+    domain: "ML/Electronics/App Development",
+    thumbnail: `${projectPath}`,
+    description:
+      "An IoT integrated precision agriculture system that detects tomato plant diseases from images using a deep learning model and automatically triggers pesticide spraying via an ESP32-controlled hardware system.",
+    techStack: [
+      "Python",
+      "Tensorflow",
+      "OpenCV",
+      "Flask",
+      "ESP32",
+      "Flutter(Dart)",
+    ],
+    images: [
+      `${projectPath}`,
+      `${projectPath}`,
+      `${projectPath}`,
+      `${projectPath}`,
+    ],
+    link: "https://github.com/slyeet03/SmartSpray",
+  },
+  {
+    id: 7,
+    title: "LEVELS",
+    domain: "Game Development",
+    thumbnail: `${projectPath}LEVELS/thumb.jpg`,
+    description:
+      "LEVELS is a chaotic, goofy puzzle-platformer developed during the Evoque Game Jam hosted by ACM. Created by a 2-person team called 'We Can't Code', the game embraces bugs, randomness, and intentional design flaws to make you laugh, rage, and maybe even question reality.",
+    techStack: ["Godot", "GDScript"],
+    images: [`${projectPath}LEVELS/thumb.jpg`, `${projectPath}LEVELS/1.png`],
+    link: "https://github.com/slyeet03/LEVELS",
+  },
+  {
+    id: 8,
+    title: "Linkee",
+    domain: "App Development",
+    thumbnail: `${projectPath}`,
+    description:
+      "A cross-platform remote control application that turns your mobile device into a wireless mouse, keyboard, and media controller for your computer.",
+    techStack: ["Rust", "FLutter"],
+    images: [
+      `${projectPath}`,
+      `${projectPath}`,
+      `${projectPath}`,
+      `${projectPath}`,
+    ],
+    link: "https://github.com/slyeet03/Linkee",
+  },
+  {
+    id: 9,
+    title: "Portfolio",
+    domain: "",
+    thumbnail: `${projectPath}`,
+    description: "",
+    techStack: [""],
+    images: [
+      `${projectPath}`,
+      `${projectPath}`,
+      `${projectPath}`,
+      `${projectPath}`,
+    ],
+    link: "",
+  },
+  {
+    id: 10,
+    title: "MinStyle",
+    domain: "Web Development",
+    thumbnail: `${projectPath}`,
+    description:
+      "MinStyle is a web-based tool designed to simplify fashion shopping by fetching results from multiple e-commerce platforms. Users can search for clothing based on parameters like style, color, vibe, price range, gender, and event type. The platform promotes sustainability by integrating thrift store options and offering a fashion blog focused on eco-friendly shopping.",
+    techStack: [
+      "React(TypeScript)",
+      "Tailwind",
+      "Python(Flask)",
+      "Firebase",
+      "Chatbase",
+    ],
+    images: [
+      `${projectPath}`,
+      `${projectPath}`,
+      `${projectPath}`,
+      `${projectPath}`,
+    ],
+    link: "https://github.com/slyeet03/MinStyle",
+  },
+  {
+    id: 11,
+    title: "Handwritten Digit Classification",
+    domain: "ML/Computer Vision",
+    thumbnail: `${projectPath}handwritten digit classification/output.png`,
+    description:
+      "A CNN-based deep learning model trained on the MNIST dataset to classify handwritten digits (0–9), achieving 98.66% test accuracy. Includes a prediction script for running inference on custom images.",
+    techStack: ["Python", "Tensorflow"],
+    images: [`${projectPath}handwritten digit classification/output.png`],
+    link: "https://github.com/slyeet03/handwritten-digit-classification/",
+  },
+  {
+    id: 12,
+    title: "Live ASCII Shader",
+    domain: "Computer Vision",
+    thumbnail: `${projectPath}live ascii shader/thumb.jpeg`,
+    description:
+      "A real-time webcam feed rendered as ASCII art directly in your terminal.",
+    techStack: ["Python", "OpenCV"],
+    images: [
+      `${projectPath}live ascii shader/thumb.jpeg`,
+      `${projectPath}live ascii shader/1.jpeg`,
+      `${projectPath}live ascii shader/2.jpeg`,
+    ],
+    link: "https://github.com/slyeet03/live-ascii-shader/",
+  },
+  {
+    id: 13,
+    title: "RecycleUs",
+    domain: "Web Development",
+    thumbnail: `${projectPath}recycleus/thumb.png`,
+    description:
+      "RecycleUs is a web application developed for the 'Hack to the Future Hackathon'. It aims to promote and simplify recycling habits by providing users with recycling guides, a recycling center locator, and personal recycling tracking features. Basically gamefying the process of recycling.",
+    techStack: ["HTML/CSS", "Javascript", "Python(Flask)", "Firebase"],
+    images: [
+      `${projectPath}recycleus/2.png`,
+      `${projectPath}recycleus/3.png`,
+      `${projectPath}recycleus/4.png`,
+      `${projectPath}recycleus/5.png`,
+    ],
+    link: "https://github.com/slyeet03/recycle-us",
   },
 ];
 
