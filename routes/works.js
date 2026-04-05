@@ -80,20 +80,35 @@ const projects = [
     id: 5,
     title: "Face2Emote",
     domain: "ML/Computer Vision",
-    thumbnail: `${projectPath}`,
+    thumbnail: `${projectPath}face2emote/thumb.jpeg`,
     description:
       "Face2Emote is a real-time emotion and gesture recognition system that detects your facial expressions and hand gestures using a webcam, then displays the corresponding emoji and plays matching sound effects",
     techStack: ["Python", "Tensorflow", "OpenCV", "Mediapipe"],
     images: [
-      `${projectPath}`,
-      `${projectPath}`,
-      `${projectPath}`,
-      `${projectPath}`,
+      `${projectPath}face2emote/thumb.jpeg`,
+      `${projectPath}face2emote/1.jpeg`,
+      `${projectPath}face2emote/2.jpeg`,
     ],
     link: "https://github.com/slyeet03/face2emote",
   },
   {
     id: 6,
+    title: "Portfolio",
+    domain: "Web Development",
+    thumbnail: `${projectPath}portfolio/thumb.jpeg`,
+    description:
+      "A minimal, personal portfolio built with Node.js, Express, and EJS. Features a home page with an about section and skills breakdown, and a works page with a project grid and image carousel modal.",
+    techStack: ["Node.js", "Express", "EJS", "HTML/CSS"],
+    images: [
+      `${projectPath}portfolio/thumb.jpeg`,
+      `${projectPath}portfolio/1.jpeg`,
+      `${projectPath}portfolio/2.jpeg`,
+      `${projectPath}portfolio/3.jpeg`,
+    ],
+    link: "",
+  },
+  {
+    id: 7,
     title: "Smart Spray",
     domain: "ML/Electronics/App Development",
     thumbnail: `${projectPath}`,
@@ -116,7 +131,7 @@ const projects = [
     link: "https://github.com/slyeet03/SmartSpray",
   },
   {
-    id: 7,
+    id: 8,
     title: "LEVELS",
     domain: "Game Development",
     thumbnail: `${projectPath}LEVELS/thumb.jpg`,
@@ -127,7 +142,7 @@ const projects = [
     link: "https://github.com/slyeet03/LEVELS",
   },
   {
-    id: 8,
+    id: 9,
     title: "Linkee",
     domain: "App Development",
     thumbnail: `${projectPath}`,
@@ -142,21 +157,7 @@ const projects = [
     ],
     link: "https://github.com/slyeet03/Linkee",
   },
-  {
-    id: 9,
-    title: "Portfolio",
-    domain: "",
-    thumbnail: `${projectPath}`,
-    description: "",
-    techStack: [""],
-    images: [
-      `${projectPath}`,
-      `${projectPath}`,
-      `${projectPath}`,
-      `${projectPath}`,
-    ],
-    link: "",
-  },
+
   {
     id: 10,
     title: "MinStyle",
