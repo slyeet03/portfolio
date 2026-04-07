@@ -2,6 +2,18 @@
 
 A minimal, personal portfolio built with Node.js, Express, and EJS. Features a home page with an about section and skills breakdown, and a works page with a project grid and image carousel modal.
 
+## Screenshots
+
+<p align="center">
+  <img src="screenshots/thumb.jpeg" width="45%" />
+  <img src="screenshots/1.jpeg" width="45%" />
+</p>
+
+<p align="center">
+  <img src="screenshots/2.jpeg" width="45%" />
+  <img src="screenshots/3.jpeg" width="45%" />
+</p>
+
 ## Stack
 
 - **Backend** — Node.js, Express
