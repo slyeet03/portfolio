@@ -149,3 +149,75 @@
 .skills-column span:hover {
   opacity: 1;
 }
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    padding: 0 24px;
+    /* push content below the top nav bar (~70px) */
+    padding-top: 80px;
+  }
+
+  /* Hero: let the title breathe but don't over-pad */
+  .hero {
+    padding-top: 48px;
+    padding-bottom: 24px;
+  }
+
+  .hero-title {
+    font-size: clamp(3.8rem, 18vw, 6rem);
+    line-height: 0.92;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-top: 16px;
+  }
+
+  .hero-contact {
+    font-size: 0.9rem;
+    padding-bottom: 32px;
+  }
+
+  /* About: full width, no right-align offset */
+  .aboutme {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 48px 0;
+    min-height: auto;
+  }
+
+  .aboutme-title {
+    font-size: 1.4rem;
+  }
+
+  .aboutme p {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  /* Skills: 2 columns on mobile */
+  .skills {
+    padding: 48px 0 80px;
+    min-height: auto;
+  }
+
+  .skills-title {
+    font-size: 1.4rem;
+  }
+
+  .skills-column {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  .skills-column > div::before {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+
+  .skills-column span {
+    font-size: 0.95rem;
+  }
+}

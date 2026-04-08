@@ -263,3 +263,67 @@
   border: 1px solid rgba(232, 228, 224, 0.2);
   padding: 4px 12px;
 }
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .works-main {
+    margin-left: 0;
+    padding: 90px 24px 48px;
+  }
+
+  .work-title {
+    margin-bottom: 28px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  /* Single column card grid */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* Modal: stack vertically */
+  .modal-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 45% 55%;
+    width: 100vw;
+    height: 100dvh;
+    max-width: 100%;
+  }
+
+  .modal-left {
+    height: 100%;
+  }
+
+  .modal-right {
+    padding: 24px 20px;
+    gap: 10px;
+    overflow-y: auto;
+  }
+
+  .modal-title {
+    font-size: 1.6rem;
+  }
+
+  .modal-description {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .tech-pill {
+    font-size: 0.8rem;
+    padding: 3px 10px;
+  }
+
+  /* Larger close button hit target on mobile */
+  .modal-close {
+    top: 12px;
+    right: 14px;
+    font-size: 1.1rem;
+    opacity: 0.7;
+    padding: 6px;
+  }
+}
