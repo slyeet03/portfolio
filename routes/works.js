@@ -17,6 +17,21 @@ const projectPath = "/assets/projects/";
 const projects = [
   {
     id: 1,
+    title: "SVM from scratch",
+    domain: "",
+    thumbnail: `https://res.cloudinary.com/dolgll6n7/image/upload/q_auto/f_auto/v1778692899/plot2_qnk8wi.jpg`,
+    description:
+      "A Support Vector Machine implementation in Rust, built from scratch. It includes the SMO optimizer, kernel functions, cross-validation, grid search, PCA, and visualization utilities.",
+    techStack: ["Rust"],
+    images: [
+      `https://res.cloudinary.com/dolgll6n7/image/upload/q_auto/f_auto/v1778692900/plot1_vkpl88.jpg`,
+      `https://res.cloudinary.com/dolgll6n7/image/upload/q_auto/f_auto/v1778692899/plot2_qnk8wi.jpg`,
+      `https://res.cloudinary.com/dolgll6n7/image/upload/q_auto/f_auto/v1778692900/plot3_irbgfx.jpg`,
+    ],
+    link: "https://github.com/slyeet03/svm-from-scratch",
+  },
+  {
+    id: 2,
     title: "Driver Behaviour Analysis",
     domain: "ML/Computer Vision",
     thumbnail: `https://res.cloudinary.com/dolgll6n7/image/upload/q_auto/f_auto/v1775407720/tumb_g5gaee.jpg`,
@@ -30,7 +45,7 @@ const projects = [
     link: "https://github.com/slyeet03/driver_behaviour_analysis",
   },
   {
-    id: 2,
+    id: 3,
     title: "spoify",
     domain: "TUI",
     thumbnail: `https://res.cloudinary.com/dolgll6n7/image/upload/q_auto/f_auto/v1775407760/thumb_y1p5qu.png`,
@@ -46,7 +61,7 @@ const projects = [
     link: "https://github.com/slyeet03/spoify",
   },
   {
-    id: 3,
+    id: 4,
     title: "University Exam System",
     domain: "Web Development",
     thumbnail: `https://res.cloudinary.com/dolgll6n7/image/upload/q_auto/f_auto/v1775407763/thumb_aiu1fm.png`,
@@ -62,7 +77,7 @@ const projects = [
     link: "https://github.com/slyeet03/university-exam-system",
   },
   {
-    id: 4,
+    id: 5,
     title: "Space Invaders in C",
     domain: "Game Development",
     thumbnail: `https://res.cloudinary.com/dolgll6n7/image/upload/q_auto/f_auto/v1775407774/thumb_rsy9dj.png`,
@@ -77,7 +92,7 @@ const projects = [
     link: "https://github.com/slyeet03/space-invaders-in-C/tree/main",
   },
   {
-    id: 5,
+    id: 6,
     title: "Face2Emote",
     domain: "ML/Computer Vision",
     thumbnail: `https://res.cloudinary.com/dolgll6n7/image/upload/q_auto/f_auto/v1775407728/thumb_jif6cr.jpg`,
@@ -92,7 +107,7 @@ const projects = [
     link: "https://github.com/slyeet03/face2emote",
   },
   {
-    id: 6,
+    id: 7,
     title: "Portfolio",
     domain: "Web Development",
     thumbnail: `https://res.cloudinary.com/dolgll6n7/image/upload/q_auto/f_auto/v1775407750/thumb_mi2hb9.jpg`,
@@ -105,10 +120,10 @@ const projects = [
       `https://res.cloudinary.com/dolgll6n7/image/upload/q_auto/f_auto/v1775407751/3_znuido.jpg`,
       `https://res.cloudinary.com/dolgll6n7/image/upload/q_auto/f_auto/v1775407752/2_mzimpa.jpg`,
     ],
-    link: "",
+    link: "https://github.com/slyeet03/portfolio",
   },
   {
-    id: 7,
+    id: 8,
     title: "Smart Spray",
     domain: "ML/Electronics/App Development",
     thumbnail: `https://res.cloudinary.com/dolgll6n7/image/upload/q_auto/f_auto/v1775407758/thumb_ffemki.jpg`,
@@ -132,7 +147,7 @@ const projects = [
     link: "https://github.com/slyeet03/SmartSpray",
   },
   {
-    id: 8,
+    id: 9,
     title: "LEVELS",
     domain: "Game Development",
     thumbnail: `https://res.cloudinary.com/dolgll6n7/image/upload/q_auto/f_auto/v1775407740/thumb_hwff9u.jpg`,
@@ -146,7 +161,7 @@ const projects = [
     link: "https://github.com/slyeet03/LEVELS",
   },
   {
-    id: 9,
+    id: 10,
     title: "Linkee",
     domain: "App Development",
     thumbnail: `https://res.cloudinary.com/dolgll6n7/image/upload/q_auto/f_auto/v1775407746/thumb_uutrgr.jpg`,
@@ -166,7 +181,7 @@ const projects = [
   },
 
   {
-    id: 10,
+    id: 11,
     title: "Handwritten Digit Classification",
     domain: "ML/Computer Vision",
     thumbnail: `https://res.cloudinary.com/dolgll6n7/image/upload/q_auto/f_auto/v1775407740/output_ytybop.png`,
@@ -179,7 +194,7 @@ const projects = [
     link: "https://github.com/slyeet03/handwritten-digit-classification/",
   },
   {
-    id: 11,
+    id: 12,
     title: "Live ASCII Shader",
     domain: "Computer Vision",
     thumbnail: `https://res.cloudinary.com/dolgll6n7/image/upload/q_auto/f_auto/v1775407750/1_s2qjz0.jpg`,
@@ -194,7 +209,7 @@ const projects = [
     link: "https://github.com/slyeet03/live-ascii-shader/",
   },
   {
-    id: 12,
+    id: 13,
     title: "RecycleUs",
     domain: "Web Development",
     thumbnail: `https://res.cloudinary.com/dolgll6n7/image/upload/q_auto/f_auto/v1775407755/thumb_rqnxkq.png`,
