@@ -67,6 +67,20 @@
   margin-bottom: 48px;
 }
 
+/* ── SCROLL ANIMATION ── */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.55s ease,
+    transform 0.55s ease;
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* ── ABOUT ME ── */
 .aboutme {
   min-height: 40vh;
@@ -75,7 +89,7 @@
   justify-content: center;
   padding: 80px 0;
   max-width: 600px;
-  margin-left: auto;
+  margin-left: auto; /* right-aligned */
 }
 
 .aboutme-title {
@@ -92,6 +106,69 @@
   line-height: 1.9;
   opacity: 0.75;
   margin-bottom: 20px;
+}
+
+/* ── EXPERIENCE ── */
+.experience {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 0;
+  max-width: 600px;
+  margin-right: auto; /* left-aligned */
+}
+
+.experience-title {
+  font-size: 2rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  opacity: 0.5;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.experience-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(232, 228, 224, 0.15);
+  margin-bottom: 40px;
+}
+
+.experience-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.experience-company {
+  font-family: var(--font-display);
+  font-weight: 100;
+  font-size: 1.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.experience-role {
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.45;
+}
+
+.experience-date {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.3;
+  margin-top: 2px;
+}
+
+.experience-desc {
+  font-size: 1.1rem;
+  line-height: 1.85;
+  opacity: 0.7;
+  margin-top: 16px;
 }
 
 /* ── SKILLS ── */
@@ -155,11 +232,9 @@
   .main-content {
     margin-left: 0;
     padding: 0 24px;
-    /* push content below the top nav bar (~70px) */
     padding-top: 80px;
   }
 
-  /* Hero: let the title breathe but don't over-pad */
   .hero {
     padding-top: 48px;
     padding-bottom: 24px;
@@ -180,7 +255,6 @@
     padding-bottom: 32px;
   }
 
-  /* About: full width, no right-align offset */
   .aboutme {
     margin-left: 0;
     max-width: 100%;
@@ -197,7 +271,24 @@
     line-height: 1.8;
   }
 
-  /* Skills: 2 columns on mobile */
+  .experience {
+    max-width: 100%;
+    padding: 48px 0;
+    min-height: auto;
+  }
+
+  .experience-title {
+    font-size: 1.4rem;
+  }
+
+  .experience-company {
+    font-size: 1.3rem;
+  }
+
+  .experience-desc {
+    font-size: 1rem;
+  }
+
   .skills {
     padding: 48px 0 80px;
     min-height: auto;

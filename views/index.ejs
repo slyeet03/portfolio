@@ -5,60 +5,85 @@
   <body>
     <%- include('partials/nav') %>
     <div class="main-content">
-    <div class = "hero">
-        <h1 class = "hero-title">SHOBHIT<br>DUTTA</h1>
-      <h6 class = "hero-subtitle">Student</h6>
+
+      <div class="hero">
+        <h1 class="hero-title">SHOBHIT<br>DUTTA</h1>
+        <h6 class="hero-subtitle">Student</h6>
       </div>
       <div class="hero-contact">
-        For business inquiries, email me at 
-  <a href="mailto:shobhit7419@gmail.com">shobhit7419@gmail.com</a>
-    </div>
-    <div class = "aboutme">
-      <h4 class="aboutme-title">ABOUT ME</h4>
-      <p>Currently a student in my second year of Bachelor of Computer and Communication Engineering at Manipal University Jaipur.</p>
-      <p>I love to explore new technologies and have projects in several domains, though I am definitely biased towards machine learning.</p>
-    </div>
-    <div class = "skills">
-      <h4 class="skills-title">SKILLS</h4>
-      <div class="skills-column">
-        <div class="languages" data-label="Languages">
-          <span>Rust</span>
-          <span>Python</span>
-          <span>JavaScript</span>
-          <span>C</span>
-          <span>Java</span>
-          <span>HTML/CSS</span>
-        </div>
-        <div class="ML/AI" data-label="ml/ai">
-          <span>TensorFlow</span>
-          <span>OpenCV</span>
-          <span>Ultralytics YOLOv8</span>
-          <span>MediaPipe</span>
-          <span>NumPy</span>
-          <span>Pandas</span>
-        </div>
-        <div class="WEB" data-label="web">
-          <span>Express.js</span>
-          <span>Node.js</span>
-          <span>EJS</span>
-        </div>
-        <div class="TOOLS" data-label="tools">
-                    <span>Git</span>
-                    <span>GitHub</span>
-          <span>Firebase</span>
-          <span>Kaggle</span>
-          <span>Railway</span>
-          <span>ESP32</span>
-        </div>
-                <div class="DATABASE" data-label="database">
-                    <span>SQL</span>
-                 
+        For business inquiries, email me at
+        <a href="mailto:shobhit7419@gmail.com">shobhit7419@gmail.com</a>
+      </div>
+
+      <!--About-->
+      <div class="aboutme scroll-reveal">
+        <h4 class="aboutme-title">ABOUT ME</h4>
+        <div class="section-divider"></div>
+        <p>Third year student doing Computer and Communication Engineering at Manipal University Jaipur, figuring things out one project at a time.</p>
+        <p>I like building things across different domains, though if you look at my projects long enough, the bias toward machine learning becomes pretty obvious.</p>      </div>
+
+      <!--Experience-->
+      <div class="experience scroll-reveal">
+        <h4 class="experience-title">EXPERIENCE</h4>
+        <div class="experience-divider"></div>
+        <div class="experience-entry">
+          <span class="experience-company">C-Edge Technologies Ltd.</span>
+          <span class="experience-role">Software Development Intern</span>
+          <span class="experience-date">May 2026 — July 2026 · Thane, Mumbai</span>
+          <p class="experience-desc">
+            Developed a Fixed Asset Management web application to track company assets
+            across their lifecycle covering acquisition cost, department allocation,
+            and depreciation. Built full-stack using Java Spring Boot, PostgreSQL, JSP,
+            and jQuery with an MVC architecture.
+          </p>
         </div>
       </div>
-    </div>
+
+      <!--Skills-->
+      <div class="skills scroll-reveal">
+        <h4 class="skills-title">SKILLS</h4>
+        <div class="skills-divider"></div>
+        <div class="skills-column">
+          <div class="languages" data-label="Languages">
+            <span>Rust</span>
+            <span>Python</span>
+            <span>JavaScript</span>
+            <span>C</span>
+            <span>Java</span>
+            <span>HTML/CSS</span>
+          </div>
+          <div class="ML/AI" data-label="ml/ai">
+            <span>TensorFlow</span>
+            <span>OpenCV</span>
+            <span>Ultralytics YOLOv8</span>
+            <span>MediaPipe</span>
+            <span>NumPy</span>
+            <span>Pandas</span>
+          </div>
+          <div class="WEB" data-label="web">
+            <span>Express.js</span>
+            <span>Node.js</span>
+            <span>EJS</span>
+            <span>Springboot</span>
+          </div>
+          <div class="TOOLS" data-label="tools">
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>Firebase</span>
+            <span>Kaggle</span>
+            <span>Railway</span>
+            <span>Vercel</span>
+            <span>ESP32</span>
+          </div>
+          <div class="DATABASE" data-label="database">
+            <span>SQL</span>
+          </div>
+        </div>
+      </div>
+
     </div>
     <%- include('partials/footer') %>
+
+    <script src="/js/home.js"></script>
   </body>
 </html>
-
-
