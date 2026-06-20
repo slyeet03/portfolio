@@ -19,7 +19,7 @@ const projects = [
     id: 1,
     title: "Tetris AI using Reinforcement Learning",
     domain: "Machine Learning/Reinforcement Learning",
-    thumbnail: ``,
+    thumbnail: `https://res.cloudinary.com/dolgll6n7/image/upload/q_auto/f_auto/v1781975966/Screenshot_2026-06-20_at_10.48.34_PM_oxgvsc.png`,
     description:
       "A Tetris implementation paired with a Double DQN agent that learns to play by evaluating afterstates, i.e., it scores every possible final resting position for the current piece, rather than picking from a fixed action space of moves.",
     techStack: ["Python", "Pytorch", "Pygame"],
