@@ -134,6 +134,18 @@
   background: #0e0e0e;
 }
 
+.modal-main-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  background: #0e0e0e;
+}
+
+.hidden {
+  display: none !important;
+}
+
 .modal-main-img.fade {
   opacity: 0;
 }

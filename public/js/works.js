@@ -12,6 +12,11 @@ const carouselDots = document.querySelector(".carousel-dots");
 const closeBtn = document.querySelector(".modal-close");
 const prevBtn = document.querySelector(".carousel-prev");
 const nextBtn = document.querySelector(".carousel-next");
+const modalVideo = document.querySelector(".modal-main-video");
+
+function isVideo(src) {
+  return src.includes("/video/upload/");
+}
 
 function openModal(project) {
   currentImages = project.images;
@@ -37,13 +42,14 @@ function openModal(project) {
   buildDots(currentImages.length);
 
   // set first image
-  modalImg.src = currentImages[0];
+  showMedia(currentImages[0]);
 
   modalOverlay.classList.add("active");
 }
 
 function closeModal() {
   modalOverlay.classList.remove("active");
+  modalVideo.pause();
   currentImageIndex = 0;
   currentImages = [];
   carouselDots.innerHTML = "";
@@ -61,16 +67,40 @@ function buildDots(count) {
   }
 }
 
+function showMedia(src) {
+  if (isVideo(src)) {
+    modalImg.classList.add("hidden");
+    modalVideo.classList.remove("hidden");
+    modalVideo.src = src;
+    modalVideo.play().catch(() => {});
+  } else {
+    modalVideo.pause();
+    modalVideo.classList.add("hidden");
+    modalImg.classList.remove("hidden");
+    modalImg.src = src;
+  }
+}
+
 function updateCarousel(index) {
   currentImageIndex = index;
+  const src = currentImages[index];
 
-  modalImg.classList.add("fade");
-  setTimeout(() => {
-    modalImg.src = currentImages[index];
-    modalImg.classList.remove("fade");
-  }, 250);
+  if (isVideo(src)) {
+    modalImg.classList.add("hidden");
+    modalVideo.classList.remove("hidden");
+    modalVideo.src = src;
+    modalVideo.play().catch(() => {});
+  } else {
+    modalVideo.pause();
+    modalVideo.classList.add("hidden");
+    modalImg.classList.add("fade");
+    setTimeout(() => {
+      modalImg.src = src;
+      modalImg.classList.remove("hidden");
+      modalImg.classList.remove("fade");
+    }, 250);
+  }
 
-  // update dots
   document.querySelectorAll(".dot").forEach((dot, i) => {
     dot.classList.toggle("active", i === index);
   });
